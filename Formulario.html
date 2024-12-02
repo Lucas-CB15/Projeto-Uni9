@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fbe9f2, #d3eaf7);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(47, 22, 130, 0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #740a6f;
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      flex: 1 1 150px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .form-group input, .form-group select {
+      flex: 2 1 300px;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group input[type="radio"] {
+      flex: 0 0 auto;
+      margin-right: 5px;
+    }
+
+    .form-actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background: #1bb3ff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-actions button:hover {
+      background: #0376cd;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1 class="form-title">Formulário de Cadastro</h1>
+    <form>
+      <div class="form-group">
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+      </div>
+      <div class="form-group">
+        <label for="local">Local da ação:</label>
+        <input type="text" id="local" name="local">
+      </div>
+      <div class="form-group">
+        <label for="voluntario">Nome do voluntário:</label>
+        <input type="text" id="voluntario" name="voluntario">
+      </div>
+      <div class="form-group">
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+      </div>
+      <div class="form-group">
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" name="genero">
+      </div>
+      <div class="form-group">
+        <label for="cidade">Cidade de origem:</label>
+        <input type="text" id="cidade" name="cidade">
+      </div>
+      <div class="form-group">
+        <label for="documentos">Tem documentos de identidade (RG, CPF, CNH)?</label>
+        <input type="text" id="documentos" name="documentos">
+      </div>
+      <div class="form-group">
+        <label>Possui algum meio de contato? Se sim, qual?</label>
+        <input type="radio" id="contatoSim" name="contato" value="Sim">
+        <label for="contatoSim">Sim</label>
+        <input type="radio" id="contatoNao" name="contato" value="Não">
+        <label for="contatoNao">Não</label>
+        <input type="text" id="meio-contato" name="meio-contato" placeholder="Informe o contato">
+      </div>
+      <div class="form-group">
+        <label for="situacao">Está em situação de rua ou tem acesso a algum tipo de moradia?</label>
+        <input type="text" id="situacao" name="situacao">
+      </div>
+      <div class="form-group">
+        <label for="albergue">Se em albergue, qual?</label>
+        <input type="text" id="albergue" name="albergue">
+      </div>
+      <div class="form-group">
+        <label for="leito">Leito:</label>
+        <input type="text" id="leito" name="leito">
+      </div>
+      <div class="form-group">
+        <label for="assistente-social">Assistente social:</label>
+        <input type="text" id="assistente-social" name="assistente-social">
+      </div>
+      <div class="form-group">
+        <label for="contato">Contato:</label>
+        <input type="text" id="contato" name="contato">
+      </div>
+      <div class="form-actions">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
